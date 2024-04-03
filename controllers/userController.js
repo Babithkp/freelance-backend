@@ -104,7 +104,7 @@ exports.updateRegiterProfile = async (req, res, next) => {
   const addressFileUrl = req.body.addressFileUrl;
 
   try {
-    const user = await User.findByIdAndUpdate(id, { token: "0" });
+    const user = await User.findByIdAndUpdate(id, { token: "60" });
     if (individual) {
       const userInfo = await UserRegistor.findOneAndUpdate(
         { user: id },
